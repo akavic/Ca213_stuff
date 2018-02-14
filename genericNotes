@@ -1,0 +1,3 @@
+
+static method tips
+The reason for it, if you think about it, is that the method, being static, does not belong to any particular object. Because it belongs to the class, why would you want to elevate a particular object to such a special status that it appears to own a method
