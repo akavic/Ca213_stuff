@@ -1,3 +1,5 @@
+/*import org.omg.CORBA.Environment;
+
 using System;
 
 public class Program
@@ -13,7 +15,7 @@ public class Program
             Environment.Exit(-1);
         }
 
-        bool stillTrying = true;
+        boolean stillTrying = true;
 
         //me.SpeakCheesyPickupLine();  - no let's not do this
 
@@ -55,3 +57,5 @@ public class Program
         }
     }
 }
+
+*/
