@@ -1,0 +1,4 @@
+A class should only be concerend with one thing
+in the switchable i could have easily cretea a method tun on and off which took a parameter of light or object to detrmine whether they should turn on and off
+but that wrong cuase i'd have to create an on and off switch for every new device ...but with the intreface class switchable
+i declare two methods on and off then in switchable then in switch i'm only concerend with classes that can call on an off(basically class that implement switchable )

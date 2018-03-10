@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 /**
  * Created by bobby_000 on 08/03/2018.
  */
@@ -12,7 +15,51 @@ public class Demo {
         mswitch.turnonState(fan);
         mswitch.turnoffState(fan);
 
+       int [] arr={9,8,7,6,5,4,3,2,1};
 
+        System.out.print(Arrays.toString(arr));
+
+
+    }
+
+    public static void quickSort(int[] arr, int low, int high) {
+        //https://www.programcreek.com/2012/11/quicksort-array-in-java/
+        if (arr == null || arr.length == 0)
+            return;
+
+        if (low >= high)
+            return;
+
+        // pick the pivot
+        int middle = low + (high - low) / 2;
+        int pivot = arr[middle];
+
+        // make left < pivot and right > pivot
+        int i = low, j = high;
+        while (i <= j) {
+            while (arr[i] < pivot) {
+                i++;
+            }
+
+            while (arr[j] > pivot) {
+                j--;
+            }
+
+            if (i <= j) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                i++;
+                j--;
+            }
+        }
+
+        // recursively sort two sub parts
+        if (low < j)
+            quickSort(arr, low, j);
+
+        if (high > i)
+            quickSort(arr, i, high);
     }
 }
 
